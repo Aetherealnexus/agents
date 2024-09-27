@@ -1,0 +1,124 @@
+/* page.module.css */
+.hero {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: "GeistMono";
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  animation: fadeIn 1s ease-in-out;
+  color: var(--primary-color);
+}
+
+.subtitle {
+  font-family: "GeistSans";
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.searchBox {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 48px 12px 16px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  font-family: "GeistSans";
+}
+
+.searchInput:focus {
+  border-color: var(--secondary-color);
+  background-color: var(--background-color);
+  box-shadow: 0 0 10px rgba(0, 160, 255, 0.5);
+}
+
+.searchIcon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #0070f3;
+  pointer-events: none;
+}
+
+/* List Styles */
+.pagesList {
+  margin-top: 40px;
+  text-align: left;
+  max-width: 600px; /* Centering the list */
+  width: 100%; /* Full width */
+}
+
+.listTitle {
+  font-family: "Helvetica Neue", sans-serif; /* Modern font */
+  font-size: 2rem;
+  color: #333; /* Dark text for better contrast */
+  margin-bottom: 20px;
+}
+
+.pageLinks {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pageItem {
+  margin-bottom: 15px; /* Space between items */
+}
+
+.pageLink {
+  text-decoration: none; /* No underline */
+  color: #0070f3; /* Link color */
+  font-size: 1.2rem; /* Title font size */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.pageLink:hover {
+  color: #00aaff; /* Change color on hover */
+}
+
+/* Button Styles */
+.showMoreButton {
+  background-color: transparent; /* Transparent background */
+  border: 1px solid #0070f3; /* Border to match link color */
+  color: #0070f3; /* Button text color */
+  font-size: 1rem;
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 20px; /* Space above button */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for button */
+}
+
+.showMoreButton:hover {
+  background-color: #0070f3; /* Button background on hover */
+  color: white; /* Button text color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .listTitle {
+    font-size: 1.5rem;
+  }
+
+  .pageLink {
+    font-size: 1rem; /* Adjust title size for mobile */
+  }
+
+  .showMoreButton {
+    font-size: 0.9rem; /* Smaller button text on mobile */
+  }
+}

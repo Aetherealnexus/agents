@@ -1,0 +1,42 @@
+/* page1.module.css */
+
+.container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+
+.overview, .team, .useCase, .features, .practicalUseCases, .future {
+  margin-bottom: 40px;
+}
+
+.useCaseCard {
+  background-color: var(--background-color);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.useCaseCard:hover {
+  transform: scale(1.02);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: var(--background-color);
+}
